@@ -8,7 +8,7 @@ A React-based demo that simulates the user experience of auto-filling job applic
 
 ## 🎥 Video Demonstration
 
-Watch explainer video here - 
+Watch explainer video here - https://www.loom.com/share/c6de24ce6c3449b5a20551e1da93382b
 
 ## 🧠 Why I Built This
 
