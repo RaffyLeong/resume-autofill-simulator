@@ -5,6 +5,8 @@ A React-based demo that simulates the user experience of auto-filling job applic
 ## 🚀 Live Demo
 
 **View the live project here** - https://resumeautofillsimulator.netlify.app/
+<img width="952" height="704" alt="Screenshot 2025-12-07 at 4 49 51 PM" src="https://github.com/user-attachments/assets/01515e90-fe76-4616-99f6-9cf28a81e8be" />
+
 
 ## 🎥 Video Demonstration
 
