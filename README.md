@@ -1,73 +1,42 @@
-# React + TypeScript + Vite
+# Resume Form Auto-Filler (Simulation)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React-based demo that simulates the user experience of auto-filling job application forms by parsing a resume PDF. This project showcases handling file uploads, complex form state management, and creating a dynamic UI.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**View the live project here** - https://resumeautofillsimulator.netlify.app/
+<img width="952" height="704" alt="Screenshot 2025-12-07 at 4 49 51 PM" src="https://github.com/user-attachments/assets/01515e90-fe76-4616-99f6-9cf28a81e8be" />
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🎥 Video Demonstration
 
-## Expanding the ESLint configuration
+Watch explainer video here - https://www.loom.com/share/c6de24ce6c3449b5a20551e1da93382b
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧠 Why I Built This
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+As a career-changer learning frontend development, I noticed that manually filling out lengthy job application forms is a universal pain point. This project is my attempt to conceptualize and build a user-friendly solution for this problem.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## ⚙️ How It Works (The Simulation)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+*   **User Interaction:** The user uploads a PDF file, mimicking a real resume upload.
+*   **Simulated Parsing:** Since PDF parsing in the browser is a complex backend challenge, this demo simulates the result using mock data.
+*   **Auto-Fill:** Upon "upload," the form fields (First Name, Last Name, Email, etc.) are automatically populated with the mock data, demonstrating a seamless user experience.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🛠️ Tech Stack
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+*   **Frontend:** React, TypeScript
+*   **Styling:** Plain CSS (or Tailwind CSS - if you used it)
+*   **Deployment:** Netlify
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🚧 Challenges & Learnings
+
+*   **State Management:** Learned to efficiently manage multiple pieces of form state using React's `useState` hook.
+*   **File Handling:** Gained experience with handling file input and the `onChange` events in a React environment.
+*   Understood the complexity of true PDF parsing and made a strategic decision to simulate the core UX to demonstrate frontend capabilities.
+
+## 📁 Running Locally
+
+1. Clone the repo: `https://github.com/RaffyLeong/resume-autofill-simulator.git`
+2. Install dependencies: `npm install`
+3.  Run the dev server: `npm run dev`
+4.  Open [http://localhost:5173](http://localhost:5173) in your browser.
